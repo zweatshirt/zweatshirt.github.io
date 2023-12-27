@@ -1,49 +1,100 @@
+@font-face {
+  font-family: GNU;
+  src: url("zweatshirt.github.io/unifont-15.1.04.otf") format("opentype");
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  
+  font-family: GNU;
+  color: #2a3d22;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+
 }
 
+
 h1 {
+  font-family: GNU;
   text-align: center;
-  margin: 30px 0;
-  color: #333;
+  margin: 6px 0;
+  font-size: 2.5em;
 }
 
 #aboutme {
   max-width: 800px;
+  max-height: 800px;
   margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: #2a3d22;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  align-items: stretch; /* Adjusted to stretch vertically */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#aboutme:hover {
+  box-shadow: 30px 30px 30px rgba(28, 99, 20, 0.2);
 }
 
 #picofme {
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
+#picofme:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.first-paragraph,
+.second-paragraph,
+.project-list {
+
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  float: inline-end;
+
+}
+
+.first-paragraph p,
+.second-paragraph p {
+  text-align: left;
+}
+
+.project-list ul { text-align: left; }
+
 #aboutme p {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
+  color: #555;
 }
 
 a {
-  color: #007bff;
+  color: #2a3d22;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #2078c3;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 li {
@@ -52,12 +103,40 @@ li {
 
 @media only screen and (max-width: 600px) {
   #aboutme {
-    padding: 10px;
+    flex-direction: column;
   }
 
   #picofme {
     width: 100%;
     height: auto;
   }
+
+  .content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.repository {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #27ae60;
+}
+
+.repository h3 {
+  color: #3498db;
+}
+
+.repository a {
+  color: #2ecc71;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.repository a:hover {
+  color: #27ae60;
 }
 
