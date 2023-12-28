@@ -132,7 +132,8 @@ body {
       margin-right: 0;
       margin-top: 0;
       margin-bottom: 20px;
-      align-self: center; /* Center the picofme */
+      align-self: center;
+      width: inherit;
     }
 
   }
@@ -143,6 +144,9 @@ body {
     }
     #aboutme {
       min-width: 476px;
+    }
+    #pdiv {
+      width: 80%
     }
   }
 
@@ -156,4 +160,5 @@ body {
     #picofme {
       display: none ;
     }
+  
   }
