@@ -73,6 +73,9 @@
     .nes-container.with-title.is-centered.is-dark {
       align-items: center;
     }
+    .nes-container.with-title.is-centered.is-dark > .title {
+      color: burlywood;
+    }
     .icon-list {
       display: flex;
       justify-content: space-around;
@@ -83,7 +86,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: blanchedalmond;
+      color: blanc
+      hedalmond;
+    }
+    a {
+      color: inherit;
+      transition: all .6s ease-in;
+      text-decoration: none!important;
+    }
+    a:hover {
+      color: rgb(144, 83, 81);
     }
 
     .p1 {
@@ -109,9 +121,9 @@
       <div class="nes-container with-title is-centered is-dark" class="first-paragraph">
         <span class="title">About Me</span>
         <p class ="p1">
-          <strong>Senior @ <a href="https://www.siue.edu" style="color:blanchedalmond;font-weight:bold;"><u>SIU Edwardsville</u></a></strong>
+          <strong>Senior @ <a href="https://www.siue.edu"><u>SIU Edwardsville</u></a></strong>
           <ul class="nes-list is-disc">
-            <li>Majoring in Computer Science</li>
+            <li style="padding-bottom: 16px;">Majoring in Computer Science</li>
             <li>Minoring in Mathematical Studies</li>
           </ul>
         </p>
@@ -121,20 +133,27 @@
         <section class="icon-list">
           <!-- Wrap each icon and text in a container -->
           <div class="icon-container">
-            <div class="gmail"><i class="nes-icon gmail is-large"></i></div>
-            <span>Gmail</span>
+            <a href="Zach J Linscott - Resume.pdf">
+            <div class="resume"><img class="nes-avatar is-large" alt="Gravatar image example" src="picture-removebg-preview.png"style="border-radius: 15px; padding-bottom: 4px" ></div>
+            <span>Resume</span>
+            </a>
           </div>
           <div class="icon-container">
+            <a href="https://github.com/zweatshirt">
             <div class="github"><i class="nes-icon github is-large"></i></div>
             <span>GitHub</span>
+            </a>
+          </div>
+          <div class="icon-container"><a href="mailto:zachjlinscott@.com">
+            <div class="gmail"><i class="nes-icon gmail is-large"></i></div>
+            <span>Gmail</span>
+            </a>
           </div>
           <div class="icon-container">
+            <a href="https://wa.me/13142024002">
             <div class="whatsapp"><i class="nes-icon whatsapp is-large"></i></div>
             <span>WhatsApp</span>
-          </div>
-          <div class="icon-container">
-            <div class="resume"><img class="nes-avatar is-large" alt="Gravatar image example" src="picture-removebg-preview.png"style="border-radius: 15px; padding-bottom: 4px"></div>
-            <span>Resume</span>
+            </a>
           </div>
         </section>
         
@@ -142,10 +161,10 @@
     
       <div class="nes-container with-title is-centered is-dark">
         <span class="title">Some Projects</span>
-        <ul class="nes-list is-disc">
+        <ul class="nes-list is-disc ">
           <li> <a href="https://github.com/zweatshirt/bible_project">Bible Project</a></li>
-          <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Project</a> </li>
-          <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator</a> </li>
+          <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Android App</a> </li>
+          <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator Android App</a> </li>
           <li><a href="https://github.com/zweatshirt/RedditSentimentAnalysisProject">Sentiment Analysis of Reddit
               Comments</a>
           </li>
