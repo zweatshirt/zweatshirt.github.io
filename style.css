@@ -7,7 +7,6 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column; /* Align children vertically */
-    margin: 0;
   }
 
   li:not(:last-child) { 
@@ -122,7 +121,6 @@ body {
       border-width: 4px;
       margin-top:0;
       margin-bottom:30px;
-      
     }
     .nes-container.with-title.is-centered.is-dark:not(:last-child) { 
       margin-bottom: 30px;  
@@ -144,9 +142,18 @@ body {
       font-size: smaller;
     }
     #aboutme {
-      min-width: 476.5px;
+      min-width: 476px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    span {
+      font-size: smaller;
+    }
+    #aboutme {
+      min-width: 390px;
     }
     #picofme {
-      display: none;
+      display: none ;
     }
   }
