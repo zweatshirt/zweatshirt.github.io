@@ -14,13 +14,23 @@
       background-image: url("https://media.giphy.com/media/Qgfz2N36MgUBG/giphy.gif?cid=ecf05e478xd76iigc6uk2kghh5450sltua1koqm53hf9kuvj&ep=v1_gifs_search&rid=giphy.gif&ct=g");
       background-position: center;
       background-size: cover;
-      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       flex-direction: column; /* Align children vertically */
+    }
+    li:not(:last-child) { 
+      margin-bottom: 15px;  
+    }
+    a {
+      color: inherit;
+      transition: all .6s ease-in;
+      text-decoration: none!important;
+    }
+      a:hover {
+      color: rgb(144, 83, 81);
     }
 
     .name {
@@ -34,18 +44,18 @@
       display: flex;
       flex-wrap: wrap;
       margin: 0;
+      align-self: center;
+      align-items: center;
     }
 
-    #first-paragraph.p1 {
-      align-items: left;
-    }
+
 
     #picofme {
-      margin-right: 20px;
+      display: flex;
       border: solid;
       border-color: burlywood;
       border-width: 4px;
-      margin-top:.31%;
+      margin-top:.373%;
       margin-bottom:auto;
     }
 
@@ -54,6 +64,7 @@
       flex-direction: column;
    
       height: 100%; 
+      align-self: center;
     }
 
     .content .nes-container {
@@ -87,39 +98,52 @@
       justify-content: space-around;
       align-items: center;
     }
-
     .icon-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: blanc
-      hedalmond;
+      color: blanchedalmond;
     }
 
-    a {
-      color: inherit;
-      transition: all .6s ease-in;
-      text-decoration: none!important;
-    }
-    a:hover {
-      color: rgb(144, 83, 81);
-    }
+
 
     .p1 {
       text-align: left;
+     
+      align-items: left;
     }
 
     p1.nes-container.with-title.is-centered.is-dark {
       padding-inline: 5px;
     }
-    @media screen and (max-width: 320px) {
+    @media only screen and (max-width: 1000px) {
   
-      #aboutme {
-        width: 90%;
+      #wrapper {
+        width: 80%;
         display: block; /* Stops it from floating */
         margin: auto; /* Ensures that it is centered */
         margin-bottom: 25px; /* Space between the stacked elements */
         
+        
+      }
+      #picofme {
+        flex-direction: column;
+        align-items: center;
+   
+        height: 100%; 
+        margin-right: 0;
+        margin-top: 0;
+        
+        margin-bottom: 20px;
+        align-self: center; /* Center the picofme */
+      
+      }
+      #pdiv {
+        display: flex;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        align-self: center; /* Center the picofme */
       }
   
     }
@@ -127,15 +151,19 @@
 </head>
 
 <body>
-<div wrapper style="width: 1200px;">
+<div wrapper style="width: auto">
+
+  <!-- Item one-->
   <div class="name">
     <h1>Zachery Linscott</h1>
   </div>
 
+  
   <div id="aboutme">
+    <div id="picofme"><img alt="Zach" src="zach.jpg" width="450" height="591.5" /></div>
 
-    <img id="picofme" alt="Zach" src="zach.jpg" width="450" height="592" />
     <div class="content">
+
       <div class="nes-container with-title is-centered is-dark" class="first-paragraph">
         <span class="title">About Me</span>
         <p class ="p1">
@@ -146,7 +174,8 @@
           </ul>
         </p>
       </div>
-      <div class="nes-container with-title is-centered is-dark">
+
+      <div class="nes-container with-title is-centered is-dark" class="second">
         <span class="title">Info</span>
         <section class="icon-list">
           <!-- Wrap each icon and text in a container -->
@@ -174,41 +203,35 @@
             </a>
           </div>
         </section>
-        
       </div>
     
-      <div class="nes-container with-title is-centered is-dark">
+      <div class="nes-container with-title is-centered is-dark" class="third">
         <span class="title">Some Projects</span>
         <div class="projs">
-        <ul class="nes-list is-disc">
-          <li> <a href="https://github.com/zweatshirt/bible_project">Bible Project</a></li>
-          <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Android App</a> </li>
-          <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator Android App</a> </li>
-          <li><a href="https://github.com/zweatshirt/RedditSentimentAnalysisProject">Sentiment Analysis of Reddit
-              Comments</a>
-          </li>
-        </ul>
+            <ul class="nes-list is-disc">
+              <li> <a href="https://github.com/zweatshirt/bible_project">Bible Project</a></li>
+              <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Android App</a> </li>
+              <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator Android App</a> </li>
+              <li><a href="https://github.com/zweatshirt/RedditSentimentAnalysisProject">Sentiment Analysis of Reddit
+                  Comments</a>
+              </li>
+            </ul>
+        </div>
       </div>
-      </div>
+
+      
 
     </div>
-  
-    <!-- <label class="nes-btn" href="/Users/zachjlinscott/zachery-tech-site/zweatshirt.github.io/Zach J Linscott - Resume.pdf">Résumé</label>>
-    </label> -->
+    
   </div>
-
 
 </div>
-   
-<div style="width: 50%; align-self: center; text-align: center; margin-top: 2%; color:burlywood">
-    <p ">Proverb 11:25</p>
-    <p>The liberal soul shall be made fat: and he that watereth shall be watered also himself.</p>
-  </div>
 
+<div class="pdiv" style="width: 50%; align-self: center; text-align: center; margin-top: 2%; color:burlywood">
+  <p ">Proverb 11:25</p>
+  <p>The liberal soul shall be made fat: and he that watereth shall be watered also himself.</p>
+</div>
 
-
-  <script src="zweatshirt.github.io/repos.js"></script>
-  <div id="repositories"></div>
 </body>
 
 </html>
