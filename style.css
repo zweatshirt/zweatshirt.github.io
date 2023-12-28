@@ -29,6 +29,8 @@ body {
     margin: 0;
     align-self: center;
     align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .name {
@@ -96,7 +98,7 @@ body {
   p1.nes-container.with-title.is-centered.is-dark {
     padding-inline: 5px;
   }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1300px) {
 
     body {
       width: 60%;
@@ -111,6 +113,7 @@ body {
       height: 100%; 
       margin: 0;
       margin-bottom: 30px;
+      
 
     }
     #picofme{
@@ -121,6 +124,8 @@ body {
       border-width: 4px;
       margin-top:0;
       margin-bottom:30px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
     .nes-container.with-title.is-centered.is-dark:not(:last-child) { 
       margin-bottom: 30px;  
