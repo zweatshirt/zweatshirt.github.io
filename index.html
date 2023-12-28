@@ -32,7 +32,7 @@
     #aboutme { 
       height: 600px;
       display: flex;
-      align-items: flex-start; /* Align items to the top */
+       
     }
 
     #first-paragraph.p1 {
@@ -47,14 +47,14 @@
     .content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%; /* Make sure the content div takes the full height */
+   
+      height: 100%; 
     }
 
     .content .nes-container {
       flex-grow: 1;
       box-sizing: border-box;
-      margin-inline: 20px;
+      margin-inline: 10px;
       color: blanchedalmond;
     }
 
@@ -81,22 +81,18 @@
       color: blanchedalmond;
     }
 
-    .icon-container i {
-      margin: 0; /* Reset margin for default spacing */
-    }
-
     .p1 {
       text-align: left;
     }
 
     p1.nes-container.with-title.is-centered.is-dark {
-      padding-inline: 2px;
+      padding-inline: 5px;
     }
   </style>
 </head>
 
 <body>
-
+<div wrapper style="width: 1200px;">
   <div class="name">
     <h1>Zachery Linscott</h1>
   </div>
@@ -131,6 +127,10 @@
             <div class="whatsapp"><i class="nes-icon whatsapp is-large"></i></div>
             <span>WhatsApp</span>
           </div>
+          <div class="icon-container">
+            <div class="resume"><img class="nes-avatar is-large" alt="Gravatar image example" src="picture-removebg-preview.png"style="border-radius: 15px; padding-bottom: 4px"></div>
+            <span>Resume</span>
+          </div>
         </section>
         
       </div>
@@ -146,9 +146,19 @@
           </li>
         </ul>
       </div>
+
     </div>
+  
     <!-- <label class="nes-btn" href="/Users/zachjlinscott/zachery-tech-site/zweatshirt.github.io/Zach J Linscott - Resume.pdf">Résumé</label>>
     </label> -->
+  </div>
+
+
+</div>
+   
+<div class="nes-container is-rounded" style="width: 50%; align-self: center; text-align: center; margin-top: 2%">
+    <p ">Proverb 11:25</p>
+    <p>The liberal soul shall be made fat: and he that watereth shall be watered also himself.</p>
   </div>
 
 
