@@ -69,6 +69,11 @@
       padding-left: 20px; /* Optional: Add some left padding for better visual appeal */
     }
 
+    li:not(:last-child) { 
+      margin-bottom: 15px;  
+    }
+  
+
     /* Add this style to properly align the icon list */
     .nes-container.with-title.is-centered.is-dark {
       align-items: center;
@@ -89,6 +94,7 @@
       color: blanc
       hedalmond;
     }
+
     a {
       color: inherit;
       transition: all .6s ease-in;
@@ -161,7 +167,8 @@
     
       <div class="nes-container with-title is-centered is-dark">
         <span class="title">Some Projects</span>
-        <ul class="nes-list is-disc ">
+        <div class="projs">
+        <ul class="nes-list is-disc">
           <li> <a href="https://github.com/zweatshirt/bible_project">Bible Project</a></li>
           <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Android App</a> </li>
           <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator Android App</a> </li>
@@ -169,6 +176,7 @@
               Comments</a>
           </li>
         </ul>
+      </div>
       </div>
 
     </div>
