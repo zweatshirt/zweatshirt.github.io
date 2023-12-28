@@ -6,17 +6,15 @@
   <title>Zachery Linscott</title>
   <script src="zweatshirt.github.io/repos.js"></script>
   <meta name="author" content="Zachery Linscott">
+  <meta name="viewport" content="width=device-width" , init-scale="1.0">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
   <style>
     body {
-      
-    background-image: url("https://media.giphy.com/media/Qgfz2N36MgUBG/giphy.gif?cid=ecf05e478xd76iigc6uk2kghh5450sltua1koqm53hf9kuvj&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-
-      
+      background-image: url("https://media.giphy.com/media/Qgfz2N36MgUBG/giphy.gif?cid=ecf05e478xd76iigc6uk2kghh5450sltua1koqm53hf9kuvj&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,12 +37,11 @@
 
     #first-paragraph.p1 {
       align-items: left;
-      
     }
 
     #picofme {
       margin-right: 20px;
-      border: thick solid black
+      border: thick solid black;
     }
 
     .content {
@@ -68,22 +65,33 @@
     }
 
     /* Add this style to properly align the icon list */
-    .nes-container.with-title.is-centered.is-dark .icon-list {
+    .nes-container.with-title.is-centered.is-dark {
+      align-items: center;
+    }
+    .icon-list {
       display: flex;
       justify-content: space-around;
       align-items: center;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: blanchedalmond;
+    }
+
+    .icon-container i {
       margin: 0; /* Reset margin for default spacing */
     }
 
     .p1 {
       text-align: left;
     }
+
     p1.nes-container.with-title.is-centered.is-dark {
       padding-inline: 2px;
     }
-
-    
-    
   </style>
 </head>
 
@@ -105,26 +113,28 @@
             <li>Majoring in Computer Science</li>
             <li>Minoring in Mathematical Studies</li>
           </ul>
-          
-        
         </p>
       </div>
       <div class="nes-container with-title is-centered is-dark">
         <span class="title">Info</span>
         <section class="icon-list">
-         
-          <div class="gmail"><span>Gmail</span><i class="nes-icon gmail is-large"></i></div>
-     
-          <div class="git"><span>GitHub</span><i class="nes-icon github is-large"></i></div>
-     
-          <div class="gmail"><span>WhatsApp</span><i class="nes-icon whatsapp is-large"></i></div>
-     
+          <!-- Wrap each icon and text in a container -->
+          <div class="icon-container">
+            <div class="gmail"><i class="nes-icon gmail is-large"></i></div>
+            <span>Gmail</span>
+          </div>
+          <div class="icon-container">
+            <div class="github"><i class="nes-icon github is-large"></i></div>
+            <span>GitHub</span>
+          </div>
+          <div class="icon-container">
+            <div class="whatsapp"><i class="nes-icon whatsapp is-large"></i></div>
+            <span>WhatsApp</span>
+          </div>
         </section>
-        <label class="nes-btn">
-          <a href="zweatshirt.github.io/Zach J Linscott - Resume.pdf">Résumé</a>
-        </label>
+        
       </div>
-
+    
       <div class="nes-container with-title is-centered is-dark">
         <span class="title">Some Projects</span>
         <ul class="nes-list is-disc">
@@ -137,7 +147,11 @@
         </ul>
       </div>
     </div>
+    <!-- <label class="nes-btn" href="/Users/zachjlinscott/zachery-tech-site/zweatshirt.github.io/Zach J Linscott - Resume.pdf">Résumé</label>>
+    </label> -->
   </div>
+
+
 
   <script src="zweatshirt.github.io/repos.js"></script>
   <div id="repositories"></div>
