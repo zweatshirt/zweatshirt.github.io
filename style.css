@@ -144,10 +144,13 @@ body {
     }
     #aboutme {
       min-width: 476px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
     #pdiv {
       width: 80%
     }
+    
   }
 
   @media only screen and (max-width: 400px) {
