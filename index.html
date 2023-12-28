@@ -6,35 +6,126 @@
   <title>Zachery Linscott</title>
   <script src="zweatshirt.github.io/repos.js"></script>
   <meta name="author" content="Zachery Linscott">
-  <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
-  <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <style>
+    body {
+      
+    background-image: url("https://media.giphy.com/media/TRebCjNbc4dIA/giphy.gif?cid=ecf05e47iryjadk3vr2tivz1ifu5hh9tzhjbuawzco0am61b&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column; /* Align children vertically */
+    }
+
+    .name {
+      margin-bottom: 20px; /* Add margin to the bottom for separation */
+      text-align: center;
+    }
+
+    #aboutme {
+      height: 600px;
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+    }
+
+    #first-paragraph.p1 {
+      align-items: left;
+    }
+
+    #picofme {
+      margin-right: 20px;
+      border: thick solid black
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; /* Make sure the content div takes the full height */
+    }
+
+    .content .nes-container {
+      flex-grow: 1;
+      box-sizing: border-box;
+      margin-inline: 20px;
+
+    }
+
+    /* Additional style to left-align the ul */
+    .nes-container.with-title.is-centered.is-dark ul {
+      text-align: left;
+      padding-left: 20px; /* Optional: Add some left padding for better visual appeal */
+    }
+
+    /* Add this style to properly align the icon list */
+    .nes-container.with-title.is-centered.is-dark .icon-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0; /* Reset margin for default spacing */
+    }
+
+    .p1 {
+      text-align: left;
+    }
+    p1.nes-container.with-title.is-centered.is-dark {
+      padding-inline: 2px;
+    }
+
+    
+    
+  </style>
 </head>
 
-
 <body>
-  <div><h1>Zachery Linscott</h1></div>
+
+  <div class="name">
+    <h1>Zachery Linscott</h1>
+  </div>
 
   <div id="aboutme">
-    <img id="picofme" alt="Zach" src="zach.jpg" width="400" height="500" />
+
+    <img id="picofme" alt="Zach" src="zach.jpg" width="450" height="600" />
     <div class="content">
-      <div class="first-paragraph">
-        <p>
-          <strong>Senior @ <a href="https://www.siue.edu" style="color:#d00;font-weight:bold">SIUe</a></strong>
-          <br> Majoring in Computer Science
-          <br> Minoring in Mathematical Studies
-          <br>
+      <div class="nes-container with-title is-centered is-dark" class="first-paragraph">
+        <span class="title">About Me</span>
+        <p class ="p1">
+          <strong>Senior @ <a href="https://www.siue.edu" style="color:rgb(255, 255, 255);font-weight:bold;"><u>SIU Edwardsville</u></a></strong>
+          <ul class="nes-list is-disc">
+            <li>Majoring in Computer Science</li>
+            <li>Minoring in Mathematical Studies</li>
+          </ul>
+          
+        
         </p>
       </div>
-      <div class="second-paragraph">
-        <p>
-          G-Mail: <a href="mailto:zach7307@gmail.com">zach7307@gmail.com</a><br> GitHub: <a
-            href="github.com/zweatshirt">zweatshirt</a><br>
-          <a href="Zach J Linscott - Resume.pdf">Resume</a><br>
-        </p>
+      <div class="nes-container with-title is-centered is-dark">
+        <span class="title">Info</span>
+        <section class="icon-list">
+         
+          <div class="gmail"><span>Gmail</span><i class="nes-icon gmail is-large"></i></div>
+     
+          <div class="git"><span>GitHub</span><i class="nes-icon github is-large"></i></div>
+     
+          <div class="gmail"><span>WhatsApp</span><i class="nes-icon whatsapp is-large"></i></div>
+     
+        </section>
+        <label class="nes-btn">
+          <a href="zweatshirt.github.io/Zach J Linscott - Resume.pdf">Résumé</a>
+        </label>
       </div>
 
-      <div class="project-list">
-        <ul>
+      <div class="nes-container with-title is-centered is-dark">
+        <span class="title">Some Projects</span>
+        <ul class="nes-list is-disc">
           <li> <a href="https://github.com/zweatshirt/bible_project">Bible Project</a></li>
           <li> <a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">Civil Advocacy Project</a> </li>
           <li><a href="https://github.com/zweatshirt/Mobile-App-Politician-Lookup">News Aggregator</a> </li>
@@ -44,14 +135,10 @@
         </ul>
       </div>
     </div>
-    <script src="zweatshirt.github.io/repos.js"></script>
-    <div id="repositories">
-
-    </div>
-    
   </div>
 
+  <script src="zweatshirt.github.io/repos.js"></script>
+  <div id="repositories"></div>
 </body>
 
 </html>
-
