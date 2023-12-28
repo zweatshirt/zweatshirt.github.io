@@ -116,7 +116,6 @@ body {
     #picofme{
       margin-bottom: 30px;
     
-      display: flex;
       border: solid;
       border-color: burlywood;
       border-width: 4px;
@@ -141,5 +140,8 @@ body {
   @media only screen and (max-width: 800px) {
     span {
       font-size: smaller;
+    }
+    #aboutme {
+      min-width: 476.5px;
     }
   }
