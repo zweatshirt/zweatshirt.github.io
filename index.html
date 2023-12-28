@@ -9,161 +9,23 @@
   <meta name="viewport" content="width=device-width" , init-scale="1.0">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-  <style>
-    body {
-      background-image: url("https://media.giphy.com/media/Qgfz2N36MgUBG/giphy.gif?cid=ecf05e478xd76iigc6uk2kghh5450sltua1koqm53hf9kuvj&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-      background-position: center;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      flex-direction: column; /* Align children vertically */
-    }
-    li:not(:last-child) { 
-      margin-bottom: 15px;  
-    }
-    a {
-      color: inherit;
-      transition: all .6s ease-in;
-      text-decoration: none!important;
-    }
-      a:hover {
-      color: rgb(144, 83, 81);
-    }
-
-    .name {
-      margin-bottom: 20px; /* Add margin to the bottom for separation */
-      text-align: center;
-      color: burlywood;
-    }
-
-    #aboutme { 
-      height: 600px;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      align-self: center;
-      align-items: center;
-    }
-
-
-
-    #picofme {
-      display: flex;
-      border: solid;
-      border-color: burlywood;
-      border-width: 4px;
-      margin-top:.373%;
-      margin-bottom:auto;
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-   
-      height: 100%; 
-      align-self: center;
-    }
-
-    .content .nes-container {
-      flex-grow: 1;
-      box-sizing: border-box;
-      margin-inline: 10px;
-      color: blanchedalmond;
-      border-color: burlywood;
-    }
-
-    /* Additional style to left-align the ul */
-    .nes-container.with-title.is-centered.is-dark ul {
-      text-align: left;
-      padding-left: 20px; /* Optional: Add some left padding for better visual appeal */
-    }
-
-    li:not(:last-child) { 
-      margin-bottom: 15px;  
-    }
-  
-
-    /* Add this style to properly align the icon list */
-    .nes-container.with-title.is-centered.is-dark {
-      align-items: center;
-    }
-    .nes-container.with-title.is-centered.is-dark > .title {
-      color: burlywood;
-    }
-    .icon-list {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .icon-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: blanchedalmond;
-    }
-
-
-
-    .p1 {
-      text-align: left;
-     
-      align-items: left;
-    }
-
-    p1.nes-container.with-title.is-centered.is-dark {
-      padding-inline: 5px;
-    }
-    @media only screen and (max-width: 1000px) {
-  
-      #wrapper {
-        width: 80%;
-        display: block; /* Stops it from floating */
-        margin: auto; /* Ensures that it is centered */
-        margin-bottom: 25px; /* Space between the stacked elements */
-        
-        
-      }
-      #picofme {
-        flex-direction: column;
-        align-items: center;
-   
-        height: 100%; 
-        margin-right: 0;
-        margin-top: 0;
-        
-        margin-bottom: 20px;
-        align-self: center; /* Center the picofme */
-      
-      }
-      #pdiv {
-        display: flex;
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 20px;
-        align-self: center; /* Center the picofme */
-      }
-  
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-<div wrapper style="width: auto">
 
-  <!-- Item one-->
+  <!-- Item one/ row 1-->
   <div class="name">
     <h1>Zachery Linscott</h1>
   </div>
 
-  
+  <!-- row 2-->
   <div id="aboutme">
-    <div id="picofme"><img alt="Zach" src="zach.jpg" width="450" height="591.5" /></div>
+    <!-- row 2 col 1-->
+    <div id="picofme"><img alt="Zach" src="zach.jpg" width="450" /></div>
 
+    <!-- row 2 col 2-->
     <div class="content">
-
       <div class="nes-container with-title is-centered is-dark" class="first-paragraph">
         <span class="title">About Me</span>
         <p class ="p1">
@@ -224,13 +86,13 @@
     </div>
     
   </div>
+  <!-- end content div-->
+  <!-- row 3-->
+  <div class="pdiv" style="width: 50%; align-self: center; text-align: center; margin-top: 2%; color:burlywood">
+    <p ">Proverb 11:25</p>
+    <p>The liberal soul shall be made fat: and he that watereth shall be watered also himself.</p>
+  </div>
 
-</div>
-
-<div class="pdiv" style="width: 50%; align-self: center; text-align: center; margin-top: 2%; color:burlywood">
-  <p ">Proverb 11:25</p>
-  <p>The liberal soul shall be made fat: and he that watereth shall be watered also himself.</p>
-</div>
 
 </body>
 
