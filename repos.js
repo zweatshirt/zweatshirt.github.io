@@ -36,5 +36,5 @@ repositories.forEach((repo) => {
 }
 
 // Fetch repositories when the page loads
-document.addEventListener('DOMContentLoaded', fetchRepositories);
+// document.addEventListener('DOMContentLoaded', fetchRepositories);
 
