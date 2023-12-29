@@ -1,5 +1,6 @@
 body {
     background-image: url("https://media.giphy.com/media/Qgfz2N36MgUBG/giphy.gif?cid=ecf05e478xd76iigc6uk2kghh5450sltua1koqm53hf9kuvj&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    /* background-image: url("https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif?cid=ecf05e47fhw8she08s0ho57bv0tj4lbcdyysh7t5nmjbyfcf&ep=v1_gifs_search&rid=giphy.gif&ct=g"); */
     background-position: center;
     background-size: cover;
     display: flex;
@@ -7,7 +8,41 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column; /* Align children vertically */
+    
+     -webkit-animation: fadein 3s;
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+            animation-iteration-count: 1;
+        
   }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+
+
+ 
+  
+
 
   li:not(:last-child) { 
     margin-bottom: 15px;  
