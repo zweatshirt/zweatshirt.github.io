@@ -148,6 +148,9 @@ body {
     #pdiv {
       width: 80%
     }
+    .github {
+      margin-right: 15px;
+    }
     
   }
 
@@ -161,7 +164,5 @@ body {
       margin-left:  10px;
       margin-right: 10px;
     }
-    .github {
-      margin-right: 15px;
-    }
+  
   }
