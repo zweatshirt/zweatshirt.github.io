@@ -70,6 +70,8 @@ body {
   }
 
   .name {
+
+    
     margin-top: 20px;
     margin-bottom: 20px; /* Add margin to the bottom for separation */
     text-align: center;
@@ -80,9 +82,12 @@ body {
   #picofme {
     display: flex;
     height:98.7%;
-    /* border-color: burlywood; */
+    width: 415px;
+
     border: solid 4px burlywood;
   }
+
+
   .content {
     display: flex;
     flex-direction: column;
@@ -138,10 +143,12 @@ body {
 
     body {
       width: 60%;
+      height: 70%;
       margin: auto; /* Ensures that it is centered */
       margin-bottom: 30px; /* Space between the stacked elements */
-      height: auto;
+   
     }
+
     #aboutme {
       
       align-items: center;
@@ -153,8 +160,16 @@ body {
       
 
     }
+
     #picofme{
-      display: none;
+      width: 95.9%;
+      flex-basis: 100%;
+      display: inline;
+      margin-bottom: 30px;
+      margin-left: 24px;
+      margin-right: 24px;
+   
+
     }
     .nes-container.with-title.is-centered.is-dark:not(:last-child) { 
       margin-bottom: 30px;  
@@ -177,10 +192,10 @@ body {
       font-size: x-small;
     }
     #aboutme {
-      
       margin-left:  10px;
       margin-right: 10px;
     }
+  
     #pdiv {
       width: 80%
     }
@@ -188,17 +203,4 @@ body {
       margin-right: 15px;
     }
     
-  }
-
-  @media only screen and (max-width: 600px) {
-  
-    #picofme {
-      display: none ;
-    }
-    #aboutme {
-      
-      margin-left:  10px;
-      margin-right: 10px;
-    }
-  
   }
